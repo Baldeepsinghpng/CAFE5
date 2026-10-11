@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Hour Kitchen | All-Day Brunch and Coffee (Demo Concept)</title>
+  <meta name="description" content="Golden Hour Kitchen is a demo concept for a premium all-day brunch cafe: breakfast, brunch, salads, sandwiches and specialty coffee, with a table inquiry form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-bar">Demo concept. Names, menu, prices, reviews and contact details are placeholders.</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top"><span class="sun" aria-hidden="true"></span><span data-brand>Golden Hour Kitchen</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#plates">Plates</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#love">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">All-day brunch &middot; Specialty coffee</p>
+        <h1>Mornings worth<br>staying <em>late</em> for.</h1>
+        <p class="lead">Seasonal plates, slow coffee and sunlit tables, served from first light until the golden hour.</p>
+        <div class="actions">
+          <a class="btn" href="#reserve">Reserve a table</a>
+          <a class="btn btn-line" href="#menu">View menu</a>
+        </div>
+      </div>
+      <div class="hero-grid">
+        <figure class="h1"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1000&q=80" alt="Avocado toast with a poached egg on sourdough" fetchpriority="high"></figure>
+        <figure class="h2"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=80" alt="Fresh salad bowl with colourful vegetables"></figure>
+        <figure class="h3"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Coffee cup on a sunlit table"></figure>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Highlights">
+      <ul><li>Seasonal produce</li><li>House-baked bread</li><li>Vegetarian-friendly</li><li>Open all day</li></ul>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-intro">
+        <p class="eyebrow">The menu</p>
+        <h2>Fresh, generous, thoughtfully plated.</h2>
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button role="tab" class="tab on" aria-selected="true" aria-controls="p-break" id="t-break" data-tab="break">Breakfast</button>
+          <button role="tab" class="tab" aria-selected="false" aria-controls="p-brunch" id="t-brunch" data-tab="brunch" tabindex="-1">Brunch</button>
+          <button role="tab" class="tab" aria-selected="false" aria-controls="p-lunch" id="t-lunch" data-tab="lunch" tabindex="-1">Salads &amp; Sandwiches</button>
+          <button role="tab" class="tab" aria-selected="false" aria-controls="p-coffee" id="t-coffee" data-tab="coffee" tabindex="-1">Coffee</button>
+        </div>
+        <p class="fine">V = vegetarian &middot; GF = gluten-free option. Demo menu and prices.</p>
+      </div>
+      <div class="menu-lists">
+        <ul class="list" role="tabpanel" id="p-break" aria-labelledby="t-break" data-panel="break">
+          <li><div><h3>Golden Hour Toast <span class="tag">V</span></h3><p>Sourdough, smashed avocado, poached egg, chilli oil</p></div><b>&#8377;380</b></li>
+          <li><div><h3>Granola &amp; Yogurt Bowl <span class="tag">V</span></h3><p>House granola, seasonal fruit, honey</p></div><b>&#8377;320</b></li>
+          <li><div><h3>Soft Scramble</h3><p>Creamy eggs, herbs, buttered toast</p></div><b>&#8377;350</b></li>
+          <li><div><h3>Buttermilk Pancakes <span class="tag">V</span></h3><p>Maple, berries, whipped butter</p></div><b>&#8377;360</b></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p-brunch" aria-labelledby="t-brunch" data-panel="brunch" hidden>
+          <li><div><h3>Eggs Benedict</h3><p>Toasted brioche, hollandaise, wilted greens</p></div><b>&#8377;460</b></li>
+          <li><div><h3>Shakshuka <span class="tag">V</span></h3><p>Spiced tomato, baked eggs, grilled bread</p></div><b>&#8377;420</b></li>
+          <li><div><h3>Stuffed French Toast <span class="tag">V</span></h3><p>Mascarpone, caramelised banana, toasted nuts</p></div><b>&#8377;440</b></li>
+          <li><div><h3>Brunch Board</h3><p>For two: eggs, bakes, fruit, dips and sides</p></div><b>&#8377;990</b></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p-lunch" aria-labelledby="t-lunch" data-panel="lunch" hidden>
+          <li><div><h3>Harvest Salad <span class="tag">V</span><span class="tag">GF</span></h3><p>Roasted vegetables, grains, citrus dressing</p></div><b>&#8377;410</b></li>
+          <li><div><h3>Chicken Pesto Ciabatta</h3><p>Grilled chicken, basil pesto, rocket</p></div><b>&#8377;430</b></li>
+          <li><div><h3>Halloumi Sandwich <span class="tag">V</span></h3><p>Grilled halloumi, roasted pepper, honey</p></div><b>&#8377;420</b></li>
+          <li><div><h3>Tomato Burrata Plate <span class="tag">V</span><span class="tag">GF</span></h3><p>Heirloom tomato, burrata, basil oil</p></div><b>&#8377;480</b></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p-coffee" aria-labelledby="t-coffee" data-panel="coffee" hidden>
+          <li><div><h3>Flat White</h3><p>Double shot, silky milk</p></div><b>&#8377;230</b></li>
+          <li><div><h3>Honey Oat Latte <span class="tag">V</span></h3><p>Oat milk, local honey, a little cinnamon</p></div><b>&#8377;260</b></li>
+          <li><div><h3>Iced Orange Espresso</h3><p>Espresso, fresh orange, sparkling water</p></div><b>&#8377;250</b></li>
+          <li><div><h3>Matcha Latte <span class="tag">V</span></h3><p>Ceremonial-grade matcha, steamed milk</p></div><b>&#8377;270</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plates" id="plates">
+      <div class="plates-head"><p class="eyebrow">Signature plates</p><h2>Eat with your eyes first.</h2></div>
+      <div class="scroller" tabindex="0" aria-label="Signature plates, scroll sideways">
+        <figure><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80" alt="Avocado toast with egg" loading="lazy"><figcaption>Golden Hour Toast</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Brunch plate with eggs and greens" loading="lazy"><figcaption>Soft Scramble</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80" alt="Colourful harvest salad" loading="lazy"><figcaption>Harvest Salad</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80" alt="Plated dish with fresh ingredients" loading="lazy"><figcaption>Seasonal Plate</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=80" alt="Latte with art on top" loading="lazy"><figcaption>Honey Oat Latte</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+      <div class="reserve-copy">
+        <p class="eyebrow">Table inquiry</p>
+        <h2>Save us a seat.</h2>
+        <p>Tell us when you would like to visit and we will do our best to hold a table.</p>
+        <p class="demo-note"><strong>Demo form.</strong> It checks your entries but does not send them or book anything. A real booking needs a form service, booking tool or backend.</p>
+      </div>
+      <form class="form" id="resForm" novalidate>
+        <div class="f"><label for="rname">Name</label><input id="rname" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+        <div class="f"><label for="rphone">Phone</label><input id="rphone" inputmode="tel" autocomplete="tel" required><span class="err" aria-live="polite"></span></div>
+        <div class="f"><label for="rdate">Date</label><input id="rdate" type="date" required><span class="err" aria-live="polite"></span></div>
+        <div class="f">
+          <label id="plabel">Party size</label>
+          <div class="stepper" role="group" aria-labelledby="plabel">
+            <button type="button" id="dec" aria-label="Fewer guests">&minus;</button>
+            <output id="party" aria-live="polite">2</output>
+            <button type="button" id="inc" aria-label="More guests">+</button>
+          </div>
+        </div>
+        <fieldset class="f full">
+          <legend>Preferred time</legend>
+          <div class="slots" id="slots">
+            <label><input type="radio" name="slot" value="9:00 am"><span>9:00 am</span></label>
+            <label><input type="radio" name="slot" value="10:30 am"><span>10:30 am</span></label>
+            <label><input type="radio" name="slot" value="12:00 pm"><span>12:00 pm</span></label>
+            <label><input type="radio" name="slot" value="1:30 pm"><span>1:30 pm</span></label>
+            <label><input type="radio" name="slot" value="4:00 pm"><span>4:00 pm</span></label>
+          </div>
+          <span class="err" id="slotErr" aria-live="polite"></span>
+        </fieldset>
+        <button class="btn" type="submit">Request a table</button>
+        <p class="result" id="result" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="love" id="love">
+      <p class="eyebrow">Kind words <span class="tag">Demo reviews</span></p>
+      <div class="love-grid">
+        <blockquote class="reveal"><p>Bright, beautiful and the avocado toast is perfect.</p><cite>Sample Guest A</cite></blockquote>
+        <blockquote class="reveal"><p>Our new weekend ritual. Worth the wait every time.</p><cite>Sample Guest B</cite></blockquote>
+        <blockquote class="reveal"><p>Feels like a destination, not just a cafe.</p><cite>Sample Guest C</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <figure class="visit-img"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Bright cafe interior with large windows" loading="lazy"></figure>
+      <div class="visit-info">
+        <p class="eyebrow">Visit</p>
+        <h2>Find your table.</h2>
+        <address>123 Demo Street, Your City, State 000000</address>
+        <ul class="hours">
+          <li><span>Mon &ndash; Fri</span><span>7:30 am &ndash; 5:00 pm</span></li>
+          <li><span>Sat &ndash; Sun</span><span>8:00 am &ndash; 6:00 pm</span></li>
+        </ul>
+        <p class="fine">Demo hours.</p>
+        <div class="actions">
+          <a class="btn" data-maps href="https://www.google.com/maps/search/?api=1&query=Your+Cafe+Address+Here" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-line" data-tel href="tel:+910000000000">Call</a>
+          <a class="btn btn-line" data-wa href="https://wa.me/910000000000?text=Hello%2C%20I%20have%20a%20question" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span><strong data-brand>Golden Hour Kitchen</strong> &middot; Demo concept, not a real business.</span>
+    <a href="#top">Back to top</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
